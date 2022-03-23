@@ -1,0 +1,11 @@
+---
+- name: testing playbook  # Comment 
+  hosts: all
+  tasks:
+    - name: Display the message
+      debug:
+        msg: "Welcome to Ansible!"
+
+
+
+
