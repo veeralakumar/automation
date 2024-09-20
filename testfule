@@ -1,0 +1,7 @@
+
+[20/09, 1:24 pm] வீராலகுமார்(veeralakumar): sudo apt install apt-transport-https ca-certificates curl software-properties-common
+[20/09, 1:25 pm] வீராலகுமார்(veeralakumar): curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+[20/09, 1:25 pm] வீராலகுமார்(veeralakumar): echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+[20/09, 1:25 pm] வீராலகுமார்(veeralakumar): sudo apt update
+[20/09, 1:26 pm] வீராலகுமார்(veeralakumar): apt-cache policy docker-ce
+[20/09, 1:26 pm] வீராலகுமார்(veeralakumar): sudo apt install docker-ce
